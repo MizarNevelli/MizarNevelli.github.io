@@ -20,7 +20,7 @@
   height: 100vh;
 }
 .logo-wrap img{
-  width: 30vw;
+  width: 20vw;
   color: lightgrey;
 }
 .logo-wrap{
@@ -32,7 +32,7 @@
 }
 .intro h1{
   width: 50vw;
-  font-size: 500%;
+  font-size: 300%;
   text-align: center;
   letter-spacing: 5px;
   color: white;

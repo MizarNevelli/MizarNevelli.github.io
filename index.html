@@ -2,6 +2,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
 
     <!-- ARCGIS CSS -->
@@ -36,46 +38,47 @@
   </head>
   <body>
 
-    <div class="wrapper active-page1">
-      <div class="page page1">
+      <div class="wrapper active-page1">
+        <div class="page page1">
 
-        <div class="container">
-          <div class="logo-wrap">
-            <img src="./assets/logoNez.png" alt="">
-            <div class="intro">
-              <h1>Mizar Nevelli</h1>
+          <div class="container">
+            <div class="logo-wrap">
+              <img src="./assets/logoNez.png" alt="">
+              <div class="intro">
+                <h1>Mizar Nevelli</h1>
+              </div>
             </div>
+
+
           </div>
-
-
         </div>
+
+        <div class="page page2">
+          <h2>Second page</h2>
+        </div>
+
+        <div class="page page3">
+          <h2>Third page</h2>
+        </div>
+
+        <div class="page page4">
+          <h2>Fourth page</h2>
+        </div>
+
       </div>
 
-      <div class="page page2">
-        <h2>Second page</h2>
+      <div class="nav-panel">
+        <div class="scroll-btn up"></div>
+        <div class="scroll-btn down"></div>
+        <nav>
+          <ul>
+            <li data-target="1" class="nav-btn nav-page1 active"></li>
+            <li data-target="2" class="nav-btn nav-page2"></li>
+            <li data-target="3" class="nav-btn nav-page3"></li>
+            <li data-target="4" class="nav-btn nav-page4"></li>
+          </ul>
+        </nav>
       </div>
 
-      <div class="page page3">
-        <h2>Third page</h2>
-      </div>
-
-      <div class="page page4">
-        <h2>Fourth page</h2>
-      </div>
-
-    </div>
-
-    <div class="nav-panel">
-      <div class="scroll-btn up"></div>
-      <div class="scroll-btn down"></div>
-      <nav>
-        <ul>
-          <li data-target="1" class="nav-btn nav-page1 active"></li>
-          <li data-target="2" class="nav-btn nav-page2"></li>
-          <li data-target="3" class="nav-btn nav-page3"></li>
-          <li data-target="4" class="nav-btn nav-page4"></li>
-        </ul>
-      </nav>
-    </div>
   </body>
 </html>
