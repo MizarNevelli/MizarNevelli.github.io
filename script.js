@@ -53,7 +53,7 @@ function pagination() {
   /*********************
    ***** MOUSEWHEEL *****
    *********************/
-  $(document).on("mousewheel DOMMouseScroll scroll", function(e) {
+  $(document).on("mousewheel DOMMouseScroll touchmove", function(e) {
     if (!scrolling) {
       if (e.originalEvent.wheelDelta > 0 || e.originalEvent.detail < 0) {
         navigateUp();
