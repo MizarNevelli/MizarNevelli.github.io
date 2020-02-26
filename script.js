@@ -55,7 +55,7 @@ function pagination() {
    *********************/
   $(document).on("mousewheel DOMMouseScroll", function(e) {
     if (!scrolling) {
-      if (e.originalEvent.wheelDelta > 0 || e.originalEvent.detail < 0|| ) {
+      if (e.originalEvent.wheelDelta > 0 || e.originalEvent.detail < 0 ) {
         navigateUp();
         // console.log(e.originalEvent);
       } else {
