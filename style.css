@@ -12,3 +12,6 @@
   align-items: center;
   justify-content: center;
 }
+.logo-wrap img{
+  width: 50vw;
+}
