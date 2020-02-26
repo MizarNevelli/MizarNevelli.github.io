@@ -26,7 +26,7 @@ function pagination() {
     setTimeout(function() {
       $navPanel.removeClass("invisible");
       scrolling = false;
-    }, 1000);
+    }, 1200);
   }
   function navigateUp() {
     if (currentPage > 1) {
@@ -53,14 +53,29 @@ function pagination() {
   /*********************
    ***** MOUSEWHEEL *****
    *********************/
-  $(document).on("mousewheel DOMMouseScroll touchmove", function(e) {
+  $(document).on("mousewheel DOMMouseScroll", function(e) {
     if (!scrolling) {
-      if (e.originalEvent.wheelDelta > 0 || e.originalEvent.detail < 0) {
+      if (e.originalEvent.wheelDelta > 0 || e.originalEvent.detail < 0|| ) {
         navigateUp();
+        // console.log(e.originalEvent);
       } else {
         navigateDown();
       }
     }
+  });
+
+  var ts;
+  $(document).bind('touchstart', function (e){
+     ts = e.originalEvent.touches[0].clientY;
+  });
+
+  $(document).bind('touchend', function (e){
+     var te = e.originalEvent.changedTouches[0].clientY;
+     if(ts > te+5){
+        navigateDown();
+     }else if(ts < te-5){
+        navigateUp();
+     }
   });
 
   /**************************
