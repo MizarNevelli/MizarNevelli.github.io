@@ -116,9 +116,21 @@ function pagination() {
   });
 };
 
-function init() {
-  // test();
+function test(){
 
+  $("#button").click(function(){
+    $.ajax({
+      url: "demo_test.txt",
+      success: function(result){
+       $("#div1").html(result);
+    }});
+  });
+
+}
+
+function init() {
+  // test()
+  test();
   pagination();
 
 }

@@ -64,6 +64,9 @@ html, body {
   body {
     font-size: 70%;
   }
+  .intro h1{
+    font-size: 15px;
+  }
 }
 
 .wrapper {
