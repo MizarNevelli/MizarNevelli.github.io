@@ -120,9 +120,10 @@ function test(){
 
   $("#button").click(function(){
     $.ajax({
-      url: "demo_test.txt",
+      url: "https://mizarnevelli.github.io/pages/test.html",
       success: function(result){
-       $("#div1").html(result);
+        console.log(result);
+       // $("#div1").html(result);
     }});
   });
 
