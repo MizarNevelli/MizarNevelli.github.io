@@ -123,7 +123,7 @@ function test(){
       url: "https://mizarnevelli.github.io/pages/test.html",
       success: function(result){
         console.log(result);
-       // $("#div1").html(result);
+       $("#div1").html(result);
     }});
   });
 
